@@ -245,9 +245,19 @@ const NavigationBar = () => {
               </button>
               {servicesOpen && (
                 <ul className="mt-2 ml-4 space-y-2">
-                  <li>Service 1</li>
-                  <li>Service 2</li>
-                  <li>Service 3</li>
+                  {servicesItems.map((item, index) => (
+                    <li className="flex items-center gap-2">
+                      <img
+                        src={item.icon}
+                        alt={item.title}
+                        className="w-6 h-6"
+                      />
+                      <div className="flex flex-col">
+                        <p className="text-base">{item.title}</p>
+                        <p className="text-xs">{item.description}</p>
+                      </div>
+                    </li>
+                  ))}
                 </ul>
               )}
             </li>
