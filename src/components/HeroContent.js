@@ -46,7 +46,7 @@ const HeroContent = () => {
             </a>
           </div>
         </div>
-        <div className="lg:relative flex flex-col lg:block max-sm:hidden right-10 items-start border">
+        <div className="lg:relative flex flex-col lg:block max-sm:hidden right-10 items-start ">
           <img
             src="/images/Happy-Man.png"
             alt="Happy man representing satisfaction with the service"
