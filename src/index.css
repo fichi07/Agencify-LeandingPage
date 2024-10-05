@@ -15,3 +15,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.testimonial-tail {
+  content: ""; /* Wajib ada untuk pseudo-element */
+  position: absolute;
+  bottom: 0;
+  left: 0px; /* Posisi tail */
+  transform: translateY(50%); /* Geser ke tengah vertikal */
+
+  /* Bentuk Tail */
+  border-top: 20px solid transparent;
+  border-left: 20px solid white;
+  border-bottom: 20px solid transparent;
+}
